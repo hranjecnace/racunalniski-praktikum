@@ -28,7 +28,7 @@
 		\begin{pmatrix}
 			1&2&3&4&5&6\\
 			4&5&2&6&3&1
-		\end{pmatrix}^{-200}$
+		\end{pmatrix}^{-2000}$
 	\end{enumerate}
 \end{frame}
 
@@ -36,9 +36,15 @@
 	Izračunaj naslednjo determinanto $2n \times 2n$, ki ima na neoznačenih mestih ničle.
 	\[
 	\begin{vmatrix}
-		1&&&&1&&&&&\\
-		&2&&&2&&&&&\\
-		&&\ddots&&\vdots&&&&&\\
+		1&&&&1&&&&\\
+		&2&&&2&&&&\\
+		&&\ddots&&\vdots&&&&\\
+		&&&n-1&n-1&&&&\\
+		1&2&\cdots&n-1&n&n+1&n+2&\cdots&2n\\
+		&&&&n+1&n+1&&&\\
+		&&&&n+2&&n+2&&\\
+		&&&&\vdots&&&\ddots&\\
+		&&&&2n&&&&2n
 	\end{vmatrix}
 	\]
 \end{frame}
